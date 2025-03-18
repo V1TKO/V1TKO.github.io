@@ -3,16 +3,20 @@
 <html lang="uk">
 <head>
     <title>Додати фото</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
     <h1>Додати фото до авто</h1>
-    <form>
-        <label>ID авто: <input type="text"></label>
+    <a class="return" href="catalog.html">Повернутись до каталогу....</a>
+    <form class="info">
+        <label for="name">Назва авто:</label>
+        <input type="text" id="name" name="name" required><br><br>
         <label>Фото: <input type="file"></label>
         <button>Завантажити</button>
+
+
     </form>
 </div>
-<a href="index.html">Повернутись на головну сторінку....</a>
 </body>
 </html>

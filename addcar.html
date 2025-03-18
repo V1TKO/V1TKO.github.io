@@ -3,15 +3,22 @@
 <html lang="uk">
 <head>
     <title>Додати авто</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
     <h1>Додати новий автомобіль</h1>
-    <form>
-        <label>Назва авто: <input type="text"></label>
-        <button>Додати</button>
+    <a class="return" href="catalog.html">Повернутись до каталогу....</a>
+    <form class="info">
+        <label for="name">Назва авто:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="country">Країна авто:</label>
+        <input type="text" id="country" name="country" required><br><br>
+        <label for="message">Опис:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <button type="submit">Надіслати</button>
     </form>
 </div>
-<a href="index.html">Повернутись на головну сторінку....</a>
+
 </body>
 </html>
