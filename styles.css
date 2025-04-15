@@ -113,8 +113,7 @@ p.catalog a:hover {
 .navtab {
     width: 500px;
     list-style: none;
-    padding: 0;
-    margin: 0;
+
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -141,29 +140,88 @@ p.catalog a:hover {
     border-radius: 5px;
 }
 
-.info{
+.add {
     width: 500px;
-
     color: white;
     background: #09122C;
-    padding: 10px ;
-    gap:15px;
-
+    padding: 10px;
+    gap: 50px;
     text-align: center;
-
-
     margin: 0 auto;
+
 }
-.info h3{
-    display:inline;
+
+.submit-msg {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: #BE3144;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.info {
+    width: 520px;
+    color: white;
+    background: #09122C;
+
+    gap: 50px;
+    text-align: center;
+    margin: 0 auto;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease-out;
+}
+
+.info.open {
+    height: 300px;
+}
+.info input{
+    margin-top: 20px;
+}
+
+#contact-header {
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+#contact-header:hover {
+    color: #FF5F57;
+}
+
+button {
     background: #872341;
-
-    margin-block:30px;
-
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-
-
+button:hover {
+    background-color: #FF5F57;
+}
 
 
 h1{
@@ -179,6 +237,18 @@ h1{
 
 
 }
+
+h1 span {
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1 span:hover {
+    color: #ff6347;
+    transform: scale(1.2);
+}
+
+
 h2{
     width: 500px;
     color: white;
@@ -214,13 +284,12 @@ h3{
     margin-inline:100px;
     padding: 45px;
     border: 5px solid #BE3144;
-
-
-
-
-
-
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
+
+
 
 
 body {

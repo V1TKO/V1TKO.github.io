@@ -9,7 +9,7 @@
 <div class="container">
     <h1>Додати новий автомобіль</h1>
     <a class="return" href="catalog.html">Повернутись до каталогу....</a>
-    <form class="info">
+    <form class="add">
         <label for="name">Назва авто:</label>
         <input type="text" id="name" name="name" required><br><br>
         <label for="country">Країна авто:</label>
@@ -18,7 +18,8 @@
         <textarea id="message" name="message" rows="4" required></textarea><br><br>
         <button type="submit">Надіслати</button>
     </form>
+    <div id="submit-msg" class="submit-msg hidden">Дякуємо! Дані надіслано :3</div>
 </div>
-
+<script src="send.js"></script>
 </body>
 </html>
